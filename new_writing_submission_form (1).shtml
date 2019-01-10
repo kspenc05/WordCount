@@ -1,0 +1,116 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link href="layout.css" rel="stylesheet" type="text/css">
+<title>PHIL 1050, Winter 2018</title>
+</head>
+<body>
+
+<div id="menu">
+
+<h3>Ethics, Knowledge, and Reality<br>(PHIL 1050)<br><hr>Winter
+2018<hr></h3>
+
+<p><a href="index.shtml">Description</a></p>
+<p><a href="schedule.shtml">Schedule</a></p>
+<p><a href="policies.shtml">Policies</a></p>
+<p><a href="resources.shtml">Resources</a></p>
+<p><a href="outcomes.shtml">Learning outcomes</a></p>
+<p><a href="scores.shtml">Scores</a></p>
+<p><a href="contact.shtml">Contact</a></p>
+<p style="line-height: 1 ! important; margin-top: 1em;"><a
+href="writing_submission_form.shtml">Submit a writing assignment</a></p>
+
+</div>
+
+
+<div id='content'>
+<!-- 0000000000000000000000000000000 !-->
+<!-- change assignment number !-->
+<!-- 0000000000000000000000000000000 !-->
+<h1>Submit Writing Assignment W02</h1>
+
+<ul>
+<li>Details of the assignment will be discussed in lecture or seminar.
+<li>Limit: 250 words.
+<!-- 0000000000000000000000000000000 !-->
+<!-- change deadline !-->
+<!-- 0000000000000000000000000000000 !-->
+<li>Deadline:  7 am Monday, January 22</ul>
+
+<h2>The submission process</h2>
+<ul>
+
+<li>Write your submission on your computer <em>and save it there</em> in addition
+to submitting it using this form.
+
+<li>If you click &#8220;Submit this writing&#8221; and you don&#8217;t get a
+page saying &#8220;The following submission was entered&#8221; or &#8220;The
+following submission was updated,&#8221 then <em>your assignment has not yet been
+submitted</em>.  Try again until you get a page showing one of those messages.
+<li>You can re-submit your assignment at any time before the deadline; the new
+submission will replace the previous one in the database.  </ul>
+
+<h2>Formatting tips</h2>
+
+<p>In the large box, enter your submission&#8212;copy and paste from whatever word
+processor you use.
+
+<ul>
+<li>Don&#8217;t put in any title, header, name etc.
+<li>If you want italics, flank text with asterisks, *like so*.
+<li>If you want a break between paragraphs, leave an empty line between them.
+</ul>
+
+</p>
+
+<h2>Submission form</h2>
+
+<form action="writing_submission_action.php" method="POST">
+
+<table style='border-bottom: none; margin-bottom: 1em;'>
+
+<tr>
+<td style='border-bottom: none; text-align: right;'>Your Guelph student ID (7
+digits) &nbsp;
+<td style='border-bottom: none; text-align: left;'>
+<input style='background-color: #99ffff; padding: 2px; border: solid black;'
+type='text' name='id' size = 8>
+
+<tr>
+<td style='border-bottom: none; text-align: right;'>Your code name in this
+course &nbsp;
+<td style='border-bottom: none; text-align: left;'>
+<input style='background-color: #99ffff; padding: 2px; border: solid
+black;'type='text' name='code_name' size = 15>
+
+</table>
+
+<p id = "word_count" style='text-indent: 0;'>Your submission: (WordCount:?)</p>
+
+<script>
+    function wordcount()
+    {
+        count = document.getElementById("submission").value.
+            trim().split(/\S\s+/).length;
+
+        document.getElementById("word_count").innerHTML = 
+            "Your submission: (WordCount:" + count + ")";
+    }
+</script>
+
+<textarea id = "submission"
+style='background-color: #99ffff; padding: 2px; border: solid black;'
+rows='16' cols='80' name='submission' onchange = "wordcount()"></textarea>
+
+<p><input class='button' type='submit' value='Submit this writing'> &nbsp;
+&nbsp; <input class='button' type='reset' value='Reset'></p>
+
+</form>
+
+</div>
+</body> 
+</html>
